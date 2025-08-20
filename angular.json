@@ -32,10 +32,12 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+                 "src/assets"
             ],
             "styles": [
               "src/styles.css"
+
             ]
           },
           "configurations": {
@@ -66,10 +68,12 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ProyectoTareas:build:production"
+              "buildTarget": "ProyectoTareas:build:production",
+               "port": 8095
             },
             "development": {
-              "buildTarget": "ProyectoTareas:build:development"
+              "buildTarget": "ProyectoTareas:build:development",
+               "port": 8094
             }
           },
           "defaultConfiguration": "development"
@@ -98,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "26626ed7-902f-43c4-9686-ed3a382f43db"
   }
 }
